@@ -1,0 +1,383 @@
+/* Css Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+body{
+    background-color: rgb(155, 196, 196);
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+    
+    
+}
+.marquee-tag {
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(59, 54, 54);
+    color: white;
+    position: sticky;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+
+/*  navigation bar: logo and image */
+#logo {
+    margin: 10px 34px;
+
+}
+
+#logo img {
+    height: 59px;
+    
+    margin: 3px 15px;
+    border-radius: 100%;
+}
+
+
+/* navigation bar: list  styling */
+#navbar ul {
+    display: flex;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Croissant One', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+#navbar ul li {
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+.loginpage a{
+
+    margin-left: 10px;
+    
+}
+
+.search{
+    border: 2px solid rgb(54, 5, 168);
+    border-radius: 20px;
+    height: 40px;
+    width: 300px;
+    margin-left: 270px;
+    opacity: 0.7;
+
+    text-align: center;
+}
+
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 770px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('img/bg1.jpg') no-repeat center center/cover;
+    /* background-color: aqua; */
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Croissant One', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Croissant One', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* services container  section*/
+#services-container{
+    padding-top: 88px;
+    
+}
+#services {
+    
+    
+    display: flex;
+    
+    
+
+}
+#services .h1{
+    color: red;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 5px 6px;
+    border-radius: 28px;
+    background-color: beige;
+    margin-bottom: 20px;
+}
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+/* client section */
+#clint-section {
+    /* position: relative; */
+     height: 344px;
+     padding-top: 88px;
+
+} 
+
+#clint-section::before {
+
+    content: "";
+    position: absolute;
+    background: url('img/n4.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.54;
+
+
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#clients img {
+    height: 124px;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+
+/* Contact section */
+
+#contact {
+    /* position:relative; */
+    height: 660px;
+    padding-top: 88px;
+
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(img/lg2.jpg) no-repeat center center/cover;
+    
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px ;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%
+}
+ #contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Croissant One', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+ }
+
+#contact-box form{
+    width: 40%;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px
+
+
+
+}
+
+/* utility classes */
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Croissant One', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.h-secondary {
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Croissant One', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+
+
+}
+
+
+
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.center {
+    text-align: center;
+}
+#login{
+    background: rgbS(238, 174, 202);
+    background: radial-gradient( circle, rgba(238, 174, 202, 1) 10%, rgba(148, 187, 233, 1)) 100%;
+    width: 100%;
+    height: 565px;
+    padding-top: 130px;
+    
+}
+.container{
+    display: block;
+    /* border: 0.5px solid rgb(74, 88, 60); */
+    border-radius: 5px;
+    height: 400px;
+    width: 400px;
+    margin-left:35%;
+    margin-top: 2%;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.121);
+    padding-top: 30px;
+
+
+}
+
+h1{
+    color:black(249, 93%, 47%);
+    
+}
+.form{
+    margin: 20px;
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid GRAY;
+    color: rgb(10, 122, 228);
+    border-radius: 5px;
+}
+#submit{
+    margin-left: 10px;
+    margin-right: 10px;
+    
+
+}
+input:hover{
+    color: rgb(255, 0, 0);
+    background-color: antiquewhite;
+
+        }
+        a{
+            color: blue;
+            margin-top: 10px;
+    
+            
+        
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(5, 216, 253);
+        }

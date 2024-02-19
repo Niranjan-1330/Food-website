@@ -1,0 +1,21 @@
+#navbar{
+    flex-direction: column;
+}
+
+#home{
+    flex-direction: column;
+}
+
+#services{
+flex-direction: column;
+
+}
+#services.box{
+
+flex-direction: column;
+
+}
+
+#client{
+    overflow: hidden;
+}
